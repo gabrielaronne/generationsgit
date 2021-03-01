@@ -11,7 +11,7 @@ public class exerciciolistarraysvetores {
 
 		Scanner entrada = new Scanner(System.in);
 
-		for (int x = 0; x < 5; x++) {
+		for (int x = 0; x < 6; x++) {
 
 			System.out.println("insira aqui o seu numero: ");
 			vetor[x] = entrada.nextInt();
