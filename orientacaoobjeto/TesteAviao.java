@@ -12,13 +12,14 @@ public static void main (String args[]) {
     meuaviao.liga();
     
 	
-	meuaviao.acelera(50);
+	meuaviao.acelera(100);
 	
 	
 	System.out.println(meuaviao.velocidadeAtual);
 	System.out.println(meuaviao.Versao);
 	System.out.println(meuaviao.cor);
 	System.out.println(meuaviao.Velocidademaxima);
+	System.out.println(meuaviao.PegaMarcha());
 	
 	
 	
