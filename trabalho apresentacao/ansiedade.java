@@ -3,6 +3,7 @@ package exercicioOOapresentacao;
 public class ansiedade extends Pessoa {
 
 	
+	private static int suadoenca;
 	private int niveldeagitacao;
 	private int niveldotranstornosdeansiedade;
 
@@ -24,7 +25,7 @@ public class ansiedade extends Pessoa {
 	}
 
 	public ansiedade(String nome, int idade, String telefone, int Usomedicamento, int Nivelsedentarismo, int niveldeagitacao, int niveldotranstornosdeansiedade) {
-		super(nome, idade, telefone, Usomedicamento, Nivelsedentarismo);
+		super(nome, idade, telefone,suadoenca);
 		this.niveldeagitacao = niveldeagitacao;
 		this.niveldotranstornosdeansiedade = niveldotranstornosdeansiedade;
 

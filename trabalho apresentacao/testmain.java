@@ -7,8 +7,13 @@ public class testmain {
 	public static void main(String[] args) {
 
 		Scanner leia = new Scanner(System.in);
-
-		ansiedade ansiedade = new ansiedade(null, 0, null, 0, 0, 0, 0);
+        ansiedade ansiedade = new ansiedade(null, 0, null, 0, 0, 0, 0);
+        
+        System.out.println("digite a sua doenca: 1- depressao / 2-ansiedade / 3-crise de panico");
+        int suadoenca = leia.nextInt();
+        ansiedade.setSuadoenca(suadoenca);
+        
+        if( ansiedade.getSuadoenca() ==2) {
 
 		System.out.println("digite seu nome: ");
 		String nome = leia.next();
@@ -22,15 +27,6 @@ public class testmain {
 		String telefone = leia.next();
 		ansiedade.setTelefone(telefone);
 
-		System.out.println(
-				"digite a frequencia que vc faz uso de medicamentos: 1-com pouca frequencia / 2- frequencia / 3- com muita frequencia");
-		int Usomedicamento = leia.nextInt();
-		ansiedade.setUsomedicamento(Usomedicamento);
-
-		System.out
-				.println("Digite o seu nivel de sedentarismo: 1- pouco sedentario / 2-sedentario / 3-muito sedentario");
-		int Nivelsdentarismo = leia.nextInt();
-		ansiedade.setNivelsedentarismo(Nivelsdentarismo);
 
 		System.out.println("digite o seu nivel de agitacao: 1-pouco agitado / 2-agitado ");
 		int niveldeagitacao = leia.nextInt();
@@ -48,5 +44,5 @@ public class testmain {
 	
 	
 
-	
+	}
 	}

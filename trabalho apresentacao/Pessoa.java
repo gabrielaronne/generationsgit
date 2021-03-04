@@ -4,15 +4,15 @@ public class Pessoa {
 	private String nome;
 	private int idade;
 	private String telefone;
-	private int Usomedicamento;
-	private int Nivelsedentarismo;
+	private int suadoenca;
+	
 
-	public Pessoa(String nome, int idade, String telefone, int Usomedicamento, int Nivelsedentarismo) {
+	public Pessoa(String nome, int idade, String telefone,int suadoenca) {
 		this.nome = nome;
 		this.idade = idade;
 		this.telefone = telefone;
-		this.Usomedicamento = Usomedicamento;
-		this.Nivelsedentarismo = Nivelsedentarismo;
+		this.suadoenca=suadoenca;
+		
 
 	}
 
@@ -40,20 +40,14 @@ public class Pessoa {
 		this.telefone = telefone;
 	}
 
-	public int getUsomedicamento() {
-		return Usomedicamento;
+	public int getSuadoenca() {
+		return suadoenca;
 	}
 
-	public void setUsomedicamento(int usomedicamento) {
-		Usomedicamento = usomedicamento;
+	public void setSuadoenca(int suadoenca) {
+		this.suadoenca = suadoenca;
 	}
 
-	public int getNivelsedentarismo() {
-		return Nivelsedentarismo;
-	}
-
-	public void setNivelsedentarismo(int nivelsedentarismo) {
-		Nivelsedentarismo = nivelsedentarismo;
-	}
+	
 
 }
