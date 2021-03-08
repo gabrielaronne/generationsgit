@@ -2,12 +2,9 @@ package exercicioOOapresentacao;
 
 public class ansiedade extends Pessoa {
 
-	
-	private static int suadoenca;
 	private int niveldeagitacao;
 	private int niveldotranstornosdeansiedade;
 
-	
 	public int getNiveldeagitacao() {
 		return niveldeagitacao;
 	}
@@ -24,15 +21,16 @@ public class ansiedade extends Pessoa {
 		this.niveldotranstornosdeansiedade = niveldotranstornosdeansiedade;
 	}
 
-	public ansiedade(String nome, int idade, String telefone, int Usomedicamento, int Nivelsedentarismo, int niveldeagitacao, int niveldotranstornosdeansiedade) {
-		super(nome, idade, telefone,suadoenca);
+	public ansiedade(String nome, int idade, String telefone, int suadoenca, int niveldeagitacao,
+			int niveldotranstornosdeansiedade) {
+		super(nome, idade, telefone, suadoenca);
 		this.niveldeagitacao = niveldeagitacao;
 		this.niveldotranstornosdeansiedade = niveldotranstornosdeansiedade;
 
 	}
 
-	public  void Transtornosintensos() {
-		
+	public void Transtornosintensos() {
+
 		if (this.getNiveldeagitacao() == 2 && this.getNiveldotranstornosdeansiedade() == 2) {
 			System.out.println("\n procure a ajuda de um Psiquiatra");
 			System.out.println(
@@ -52,7 +50,7 @@ public class ansiedade extends Pessoa {
 			System.out.println("\n procure a ajuda de um Psicologo e pratique meditacao");
 			System.out.println(
 					"\n Um pouco de ajuda sempre e necessario, procure formas de conter suas crises atraves de meditacao e um psicologo pode te ajudar a entender um pouco mais de seus problemas. ");
+		}
 	}
-	}
-	
+
 }
