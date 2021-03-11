@@ -1,0 +1,1 @@
+update tb_produtos set preco =300 where preco=200
