@@ -1,0 +1,1 @@
+select *from tb_personagem inner join tb_classe on tb_personagem.id = tb_classe.codigo
